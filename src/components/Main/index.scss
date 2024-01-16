@@ -1,0 +1,24 @@
+@import '../../../global.scss';
+
+body { 
+    background-color: $fundo;
+}
+
+h1 {
+    color: $branco;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 30px;
+}
+
+table {
+    border: 1px solid $branco;
+    margin: auto;
+    width: 500px;
+    padding: 10px;;
+}
+
+.table__icon {
+    text-align: center;
+    
+}

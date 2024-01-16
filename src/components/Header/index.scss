@@ -1,0 +1,32 @@
+@import '../../../global.scss';
+
+.headerNav {
+    background-color: $azul;
+
+   
+    &__list li {
+        display: inline-block;
+        margin-top: 15px;
+        margin-left: 20px;
+        font-family: 'Poppins', sans-serif;
+        font-size: 25px;
+        line-height: 37px;
+        font-weight: bolder;
+        text-align: justify;
+    }
+
+    &__list li:last-of-type {
+        background-color: $branco;
+        padding: 10px;
+        border-radius: 20px 20px 0 0;
+    }
+
+    &__list li:last-of-type a{
+        color: $azul;
+    }
+
+    &__list a {
+        text-decoration: none;
+        color: $branco;
+    }
+}

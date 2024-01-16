@@ -1,0 +1,133 @@
+@import '../../../global.scss';
+
+.tarefa {
+    color: $branco;
+}
+
+.tabela-tarefa {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.coluna-tarefa {
+    width: 500px;
+}
+
+.barra {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+
+}
+
+.barra li {
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+}
+
+.barra-tarefa li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.spanTarefa {
+    margin-right: 10px;;
+}
+
+.spanOpcoes {
+    display: flex;
+    align-items: center;
+}
+
+.spanOpcoes input {
+    margin-right: 130px;
+}
+
+.opcoes {
+    margin-right: 35px;
+}
+
+.coluna-status {
+    width: 80px;
+}
+
+.coluna-opcoes {
+    width: 80px;
+}
+
+.text {
+    display: flex;
+    justify-content: center;
+    place-items: center;
+}
+
+.inputTarefa {
+    width: 500px;
+    padding-left: 5px;
+    background-color: $fundo;
+    border: none;
+    font-size: 15px;
+    color: $branco;
+    outline: none;
+}
+
+.icon {
+    cursor: pointer;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.editModal h2 {
+    font-family: 'Poppins';
+    text-align: center;
+}
+
+.inputText {
+    padding-top: 30px;
+    padding-bottom: 50px;
+    width: 580px;
+    border: none;
+    font-size: 18px;
+    outline: none;
+    text-align: center;
+}
+
+.btnNao {
+    width: 200px;
+    height: 80px;
+    border: 2px solid $azul;
+    border-radius: 15px;
+    background-color: $azul;
+    color: $branco;
+    font-size: 20px;
+    margin-left: 25px;
+}
+
+.btnSim {
+    width: 200px;
+    height: 80px;
+    border: 2px solid #000000;
+    border-radius: 15px;
+    background-color: $branco;
+    color: #000000;
+    font-size: 20px;
+    margin-left: 130px;
+}
+
+.deleteModal h2 {
+    font-family: 'Poppins';
+    text-align: center;
+}
+
+.deleteModal p {
+    padding-top: 30px;
+    padding-bottom: 50px;
+    text-align: center;
+}
