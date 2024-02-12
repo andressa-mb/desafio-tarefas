@@ -1,5 +1,17 @@
 @import '../../../global.scss';
 
+body {
+    background-color: $fundo;
+}
+
+
+h1 {
+    color: $branco;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 30px;
+}
+
 .tarefa {
     color: $branco;
 }
@@ -92,11 +104,18 @@ ul {
 .inputText {
     padding-top: 30px;
     padding-bottom: 50px;
-    width: 580px;
+    width: 660px;
     border: none;
     font-size: 18px;
     outline: none;
     text-align: center;
+}
+
+.botoes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
 }
 
 .btnNao {
@@ -107,7 +126,6 @@ ul {
     background-color: $azul;
     color: $branco;
     font-size: 20px;
-    margin-left: 25px;
 }
 
 .btnSim {
@@ -118,7 +136,6 @@ ul {
     background-color: $branco;
     color: #000000;
     font-size: 20px;
-    margin-left: 130px;
 }
 
 .deleteModal h2 {
@@ -131,3 +148,31 @@ ul {
     padding-bottom: 50px;
     text-align: center;
 }
+
+@media screen and (max-width: 768px) {
+    .btnSim {
+        width: 90px;
+    }
+
+    .btnNao {
+        width: 90px;
+    }
+
+    .inputText {
+        width: 400px;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .btnSim {
+        width: 70px;        
+    }
+
+    .btnNao {
+        width: 70px;
+    }
+
+    .inputText {
+        width: 230px;
+    }
+  }

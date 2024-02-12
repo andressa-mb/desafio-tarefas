@@ -19,11 +19,13 @@ function Tarefa() {
 
   const customStyles = {
     content: {
-      width: '30%',
-      height: '30%',
+      width: '50%',
+      height: '50%',
       margin: 'auto',
     },
   };
+
+
 
   useEffect(() => {
     if(inputTarefaRef.current) { // Verifica se a referência existe e, se existir, coloca o foco no input
@@ -151,8 +153,10 @@ function Tarefa() {
                       onChange={(e) => setEditedText(e.target.value)}
                       className="inputText"
                       /><br></br>
-                      <button className="btnNao" onClick={closeModalEdit}>Não</button>
-                      <button className="btnSim" onClick={confirmarEdicao}>Sim</button>
+                      <div className="botoes">
+                        <button className="btnNao" onClick={closeModalEdit}>Não</button>
+                        <button className="btnSim" onClick={confirmarEdicao}>Sim</button>
+                      </div>
                     </div>
                     </Modal>
 
@@ -169,8 +173,10 @@ function Tarefa() {
                     <div className="deleteModal">
                       <h2>Deseja excluir este item?</h2>
                       <p>{tarefaDeleteInfo.texto}</p>
-                      <button className="btnNao" onClick={closeModalDelete}>Não</button>
-                      <button className="btnSim" onClick={confirmarExclusao}>Sim</button>
+                      <div className="botoes">
+                        <button className="btnNao" onClick={closeModalDelete}>Não</button>
+                        <button className="btnSim" onClick={confirmarExclusao}>Sim</button>
+                      </div>
                     </div>
                   </Modal>
                   </span>
